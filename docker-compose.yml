@@ -1,0 +1,16 @@
+services:
+  api:
+    image: jglchen/user-api-token
+    command: "php artisan serve --host=0.0.0.0"
+    ports:
+      - 8000:8000
+    volumes:
+      - breeze-api-sqlite:/app/database
+
+  next:
+    image: jglchen/user-next-token
+    ports:
+      - 3000:3000
+
+volumes:
+  breeze-api-sqlite:

@@ -1,0 +1,6 @@
+[submodule "user-api-token"]
+	path = user-api-token
+	url = https://github.com/jglchen/user-api-token
+[submodule "user-next-token"]
+	path = user-next-token
+	url = https://github.com/jglchen/user-next-token
